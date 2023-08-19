@@ -3,7 +3,7 @@ import { client, openai } from "./index.js"
 const lastMessages = [];
 async function setupArray(message) {
     let channel = client.channels.cache.get("1142418048607854714").messages;
-    await channel.fetch({ limit: 20 }).then(messages => {
+    await channel.fetch({ limit: 15 }).then(messages => {
         messages.forEach(async pmessage => {
             if (!pmessage.content.startsWith("//") && pmessage.content != message.content) {
                 if (pmessage.author.id == message.author.id) { // only get context from one user
