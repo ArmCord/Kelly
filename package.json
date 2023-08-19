@@ -1,0 +1,25 @@
+{
+  "name": "kelly",
+  "version": "1.0.0",
+  "description": "beyonce",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArmCord/Kelly.git"
+  },
+  "author": "smartfrigde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArmCord/Kelly/issues"
+  },
+  "homepage": "https://github.com/ArmCord/Kelly#readme",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "openai": "^3.3.0"
+  }
+}
