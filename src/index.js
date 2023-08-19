@@ -20,5 +20,6 @@ client.on("ready", function () {
     import("./support.js")
     import("./directQuestion.js")
     import("./playground.js")
+    //import("./eval.js")
 })
 client.login(process.env.TOKEN);

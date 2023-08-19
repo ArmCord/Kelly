@@ -38,7 +38,7 @@ client.on("messageCreate", async function (message) {
             var response = chatCompletion.data.choices[0].message.content
             message.reply(response)
         } catch (error) {
-            message.reply("An error occured, please try again later")
+            message.reply("An error occured, please try again later <@936341598965489724>")
         }
         lastMessages.length = 0;
     }
