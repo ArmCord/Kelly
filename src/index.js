@@ -18,6 +18,7 @@ export const client = new Client({
 client.on("ready", function () {
     console.log("Ready");
     import("./support.js")
+    import("./general.js")
     import("./directQuestion.js")
     import("./playground.js")
     //import("./eval.js")
