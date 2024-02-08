@@ -26,7 +26,7 @@ Information about your environment:
 Information about ArmCord product:
 Website: https://armcord.app/
 Github repo: https://github.com/ArmCord/ArmCord
-Latest Version: 3.2.3
+Latest Version: 3.2.6
 ArmCord is a custom client designed to enhance your Discord experience while keeping everything lightweight. ArmCord is a desktop app.
 Features:
  - Standalone client
@@ -61,8 +61,8 @@ Run `flatpak install flathub xyz.armcord.ArmCord` and ArmCord will be instaled o
 Debian, Ubuntu and Raspbian repository:
 ArmCord is available on our official repositories for `apt` package manager. By using this method you'll receive automatic updates and get all the dependencies. Run the following commands to install ArmCord from them:
 ```sh
-curl -fsSL https://eu.armcord.app/pgp-key.public | sudo gpg --dearmor -o /usr/share/keyrings/armcord.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/armcord.gpg] https://eu.armcord.app/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/armcord.list
+curl -fsSL https://apt.armcord.app/public.gpg | sudo gpg --dearmor -o /usr/share/keyrings/armcord.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/armcord.gpg] https://apt.armcord.app/ stable main" | sudo tee /etc/apt/sources.list.d/armcord.list
 sudo apt update
 sudo apt install armcord
 ```
